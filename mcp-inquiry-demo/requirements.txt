@@ -1,0 +1,22 @@
+# CarPlay适配器B2B询盘助手 - 依赖包
+# 核心依赖
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# 大模型API
+openai>=1.50.0
+
+# Web前端
+streamlit>=1.38.0
+
+# 数据验证
+pydantic>=2.9.0
+
+# 生产级增强（可选）
+# prometheus-client>=0.19.0  # 指标监控
+# structlog>=23.2.0  # 结构化日志
+# sentry-sdk>=1.39.0  # 错误追踪
+
+# FastAPI相关（保留用于API扩展）
+fastapi>=0.115.0
+uvicorn>=0.30.0

@@ -1,0 +1,93 @@
+# docker-compose.yml - CarPlay适配器B2B询盘助手
+version: '3.8'
+
+services:
+  # MCP服务器服务
+  mcp-server:
+    build: .
+    container_name: carplay-mcp-server
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - TZ=Asia/Shanghai
+    volumes:
+      # 挂载日志目录
+      - ./logs:/app/logs
+      # 挂载配置文件
+      - ./.env:/app/.env:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    networks:
+      - carplay-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # 前端Web界面服务
+  web-ui:
+    build: .
+    container_name: carplay-web-ui
+    restart: unless-stopped
+    command: streamlit run web/demo_page.py --server.port 8501 --server.address 0.0.0.0 --server.enableCORS false --server.enableXsrfProtection false
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - MCP_SERVER_URL=http://mcp-server:8000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./.env:/app/.env:ro
+    depends_on:
+      mcp-server:
+        condition: service_healthy
+    networks:
+      - carplay-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+# 网络配置
+networks:
+  carplay-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1
+
+# 卷配置
+volumes:
+  logs:
+    driver: local
+    name: carplay-inquiry-logs

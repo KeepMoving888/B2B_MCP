@@ -1,0 +1,325 @@
+2026-03-26 23:49:54,284 - mcp_server - INFO - ==================================================
+2026-03-26 23:49:54,284 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-26 23:49:54,284 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-26 23:49:54,284 - mcp_server - INFO - ==================================================
+2026-03-26 23:49:54,285 - mcp_server - INFO - 服务器启动成功！按 Ctrl+C 停止服务器
+2026-03-26 23:49:54,285 - mcp_server - INFO - 健康检查: http://localhost:8000/health
+2026-03-26 23:49:54,285 - mcp_server - INFO - 工具列表: http://localhost:8000/list_tools
+2026-03-26 23:50:45,325 - mcp_server - INFO - 收到POST请求: /list_tools
+2026-03-26 23:50:45,325 - mcp_server - INFO - 127.0.0.1 - "POST /list_tools HTTP/1.1" 200 -
+2026-03-26 23:50:45,327 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-26 23:50:47,362 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:50:47,362 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-26 23:50:47,362 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-26 23:50:47,362 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:50:47,362 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-26 23:50:49,402 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:50:49,402 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-26 23:50:49,402 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-26 23:50:49,402 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:50:49,403 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-26 23:50:51,441 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:50:51,443 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-26 23:50:51,444 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-26 23:50:51,444 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:50:51,444 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-26 23:51:12,128 - mcp_server - INFO - 收到POST请求: /list_tools
+2026-03-26 23:51:12,129 - mcp_server - INFO - 127.0.0.1 - "POST /list_tools HTTP/1.1" 200 -
+2026-03-26 23:51:12,129 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-26 23:51:14,155 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:51:14,155 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-26 23:51:14,155 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-26 23:51:14,155 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:51:14,155 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-26 23:51:16,195 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:51:16,195 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-26 23:51:16,196 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-26 23:51:16,196 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:51:16,196 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-26 23:51:18,221 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:51:18,221 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-26 23:51:18,221 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-26 23:51:18,221 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:51:18,223 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-26 23:56:22,640 - mcp_server - INFO - 收到POST请求: /list_tools
+2026-03-26 23:56:22,641 - mcp_server - INFO - 127.0.0.1 - "POST /list_tools HTTP/1.1" 200 -
+2026-03-26 23:56:22,641 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-26 23:56:24,677 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:56:24,678 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-26 23:56:24,678 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-26 23:56:24,678 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:56:24,679 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-26 23:56:26,706 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:56:26,708 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-26 23:56:26,708 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-26 23:56:26,708 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:56:26,709 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-26 23:56:28,739 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-26 23:56:28,739 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-26 23:56:28,739 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-26 23:56:28,740 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-26 23:56:28,740 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 00:06:45,040 - mcp_server - INFO - 收到POST请求: /list_tools
+2026-03-27 00:06:45,040 - mcp_server - INFO - 127.0.0.1 - "POST /list_tools HTTP/1.1" 200 -
+2026-03-27 00:06:45,041 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 00:06:47,075 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:06:47,075 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 00:06:47,075 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 00:06:47,076 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:06:47,076 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 00:06:49,128 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:06:49,129 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 00:06:49,129 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 00:06:49,129 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:06:49,130 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 00:06:51,163 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:06:51,164 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 00:06:51,164 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 00:06:51,164 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:06:51,165 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 00:28:25,935 - mcp_server - INFO - ==================================================
+2026-03-27 00:28:25,935 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 00:28:25,935 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 00:28:25,935 - mcp_server - INFO - ==================================================
+2026-03-27 00:28:25,936 - mcp_server - ERROR - 服务器启动失败: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+Traceback (most recent call last):
+  File "E:\AI大模型课程资料\B2B_MCP询盘助手\mcp-inquiry-demo\mcp_server\server.py", line 303, in main
+    httpd = socketserver.TCPServer((HOST, PORT), RequestHandler)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Anaconda3\envs\B2BMCP\Lib\socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "E:\Anaconda3\envs\B2BMCP\Lib\socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+2026-03-27 00:31:17,308 - mcp_server - INFO - 
+收到停止信号，正在关闭服务器...
+2026-03-27 00:31:17,308 - mcp_server - INFO - 服务器已停止
+2026-03-27 00:31:19,766 - mcp_server - INFO - ==================================================
+2026-03-27 00:31:19,766 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 00:31:19,766 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 00:31:19,766 - mcp_server - INFO - ==================================================
+2026-03-27 00:31:19,767 - mcp_server - INFO - 服务器启动成功！按 Ctrl+C 停止服务器
+2026-03-27 00:31:19,767 - mcp_server - INFO - 健康检查: http://localhost:8000/health
+2026-03-27 00:31:19,767 - mcp_server - INFO - 工具列表: http://localhost:8000/list_tools
+2026-03-27 00:31:23,978 - mcp_server - INFO - ==================================================
+2026-03-27 00:31:23,979 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 00:31:23,997 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 00:31:23,997 - mcp_server - INFO - ==================================================
+2026-03-27 00:31:24,000 - mcp_server - ERROR - 服务器启动失败: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+Traceback (most recent call last):
+  File "E:\AI大模型课程资料\B2B_MCP询盘助手\mcp-inquiry-demo\mcp_server\server.py", line 303, in main
+    httpd = socketserver.TCPServer((HOST, PORT), RequestHandler)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Anaconda3\envs\B2BMCP\Lib\socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "E:\Anaconda3\envs\B2BMCP\Lib\socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [WinError 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+2026-03-27 00:44:42,816 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:44:42,819 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 00:44:42,820 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 00:44:42,820 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:44:42,820 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-27 00:44:44,886 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:44:44,890 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 00:44:44,890 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 00:44:44,890 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:44:44,890 - mcp_server - INFO - 请求处理完成，耗时: 0.005秒
+2026-03-27 00:44:46,960 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:44:46,962 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 00:44:46,962 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 00:44:46,962 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:44:46,962 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 00:44:58,398 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:44:58,399 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 00:44:58,399 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 00:44:58,399 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:44:58,399 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 00:45:00,459 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:45:00,460 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 00:45:00,461 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 00:45:00,461 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:45:00,461 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 00:45:02,521 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 00:45:02,522 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 00:45:02,524 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 00:45:02,524 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 00:45:02,524 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-27 11:24:50,829 - mcp_server - INFO - ==================================================
+2026-03-27 11:24:50,842 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 11:24:50,858 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 11:24:50,859 - mcp_server - INFO - ==================================================
+2026-03-27 11:24:50,884 - mcp_server - INFO - 服务器启动成功！按 Ctrl+C 停止服务器
+2026-03-27 11:24:50,884 - mcp_server - INFO - 健康检查: http://localhost:8000/health
+2026-03-27 11:24:50,884 - mcp_server - INFO - 工具列表: http://localhost:8000/list_tools
+2026-03-27 11:26:25,569 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 11:26:25,569 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 11:26:25,569 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 11:26:25,570 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 11:26:25,577 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 11:26:27,634 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 11:26:27,634 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 11:26:27,634 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 11:26:27,636 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 11:26:27,636 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 11:26:29,656 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 11:26:29,656 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 11:26:29,656 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 11:26:29,656 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 11:26:29,656 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-27 12:36:47,464 - mcp_server - INFO - ==================================================
+2026-03-27 12:36:47,464 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 12:36:47,464 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 12:36:47,464 - mcp_server - INFO - ==================================================
+2026-03-27 12:36:47,464 - mcp_server - INFO - 服务器启动成功！按 Ctrl+C 停止服务器
+2026-03-27 12:36:47,465 - mcp_server - INFO - 健康检查: http://localhost:8000/health
+2026-03-27 12:36:47,465 - mcp_server - INFO - 工具列表: http://localhost:8000/list_tools
+2026-03-27 12:37:20,063 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:37:20,065 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:37:20,065 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:37:20,065 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:37:20,065 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:37:20,097 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:37:20,097 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:37:20,097 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:37:20,097 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:37:20,097 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:37:22,123 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:37:22,123 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:37:22,123 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:37:22,123 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:37:22,125 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:37:22,155 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:37:22,155 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:37:22,155 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:37:22,155 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:37:22,157 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:37:24,198 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:37:24,198 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:37:24,198 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:37:24,198 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:37:24,199 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:37:24,229 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:37:24,230 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:37:24,231 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:37:24,231 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:37:24,233 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-27 12:38:15,315 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:15,321 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:38:15,321 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:38:15,322 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:15,322 - mcp_server - INFO - 请求处理完成，耗时: 0.008秒
+2026-03-27 12:38:17,367 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:17,368 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:38:17,369 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:38:17,369 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:17,369 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-27 12:38:19,409 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:19,410 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:38:19,410 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:38:19,410 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:19,410 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:38:53,715 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:53,715 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:38:53,715 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:38:53,717 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:53,717 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:38:55,705 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:55,706 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:38:55,706 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:38:55,707 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:55,707 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:38:55,737 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:55,738 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:38:55,738 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:38:55,738 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:55,738 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:38:57,727 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:57,729 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:38:57,729 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:38:57,729 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:57,730 - mcp_server - INFO - 请求处理完成，耗时: 0.003秒
+2026-03-27 12:38:57,789 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:57,789 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:38:57,789 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:38:57,789 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:57,789 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-27 12:38:59,781 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:38:59,782 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:38:59,782 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:38:59,782 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:38:59,782 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:39:09,266 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:39:09,266 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:39:09,266 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:39:09,268 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:39:09,268 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:39:11,298 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:39:11,299 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:39:11,299 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:39:11,299 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:39:11,299 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:39:13,377 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:39:13,377 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:39:13,377 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:39:13,377 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:39:13,377 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-27 12:39:32,227 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:39:32,229 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:39:32,229 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:39:32,229 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:39:32,229 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:39:34,261 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:39:34,261 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:39:34,262 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:39:34,262 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:39:34,262 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:39:36,311 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:39:36,311 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:39:36,311 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:39:36,311 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:39:36,311 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-27 12:51:44,944 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:51:44,950 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:51:44,950 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:51:44,950 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:51:44,951 - mcp_server - INFO - 请求处理完成，耗时: 0.006秒
+2026-03-27 12:51:47,003 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:51:47,003 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:51:47,003 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:51:47,003 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:51:47,004 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:51:49,054 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:51:49,054 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:51:49,054 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:51:49,055 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:51:49,055 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:56:23,236 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:56:23,237 - mcp_server - INFO - 调用工具: get_product_stock, 参数: {'product_model': 'CPA-W1'}
+2026-03-27 12:56:23,237 - mcp_server - INFO - 库存查询结果: {'stock': 8500, 'warehouse': '深圳龙华仓', 'lead_time': '2天', 'compatibility': '支持有线/无线CarPlay'}
+2026-03-27 12:56:23,238 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:56:23,238 - mcp_server - INFO - 请求处理完成，耗时: 0.002秒
+2026-03-27 12:56:25,280 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:56:25,280 - mcp_server - INFO - 调用工具: calculate_quote, 参数: {'product_model': 'CPA-W1', 'quantity': 2000, 'destination_port': 'LOS ANGELES'}
+2026-03-27 12:56:25,281 - mcp_server - INFO - 报价计算结果: {'product_model': 'CPA-W1', 'product_name': '无线CarPlay适配器', 'quantity': 2000, 'unit_price': '$28.5', 'total_fob_price': '$57000.0', 'moq': '500台', 'payment_term': 'T/T 30%预付，70%见提单副本', 'warranty': '12个月质保'}
+2026-03-27 12:56:25,281 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:56:25,281 - mcp_server - INFO - 请求处理完成，耗时: 0.001秒
+2026-03-27 12:56:27,333 - mcp_server - INFO - 收到POST请求: /call_tool
+2026-03-27 12:56:27,333 - mcp_server - INFO - 调用工具: get_logistics_info, 参数: {'destination_port': 'LOS ANGELES', 'weight': 0.3, 'quantity': 2000}
+2026-03-27 12:56:27,333 - mcp_server - INFO - 物流查询结果: {'destination_port': 'LOS ANGELES', 'total_weight': '600.0kg', 'package_info': '每箱20台，纸箱包装', 'sea_freight': '$2100.0', 'air_freight': '$13650.0', 'shipping_time_sea': '22-28天', 'shipping_time_air': '5-7天', 'shipping_company': '马士基/中远海运'}
+2026-03-27 12:56:27,333 - mcp_server - INFO - 127.0.0.1 - "POST /call_tool HTTP/1.1" 200 -
+2026-03-27 12:56:27,333 - mcp_server - INFO - 请求处理完成，耗时: 0.000秒
+2026-03-27 13:17:18,318 - mcp_server - INFO - ==================================================
+2026-03-27 13:17:18,318 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 13:17:18,392 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 13:17:18,408 - mcp_server - INFO - ==================================================
+2026-03-27 13:17:18,408 - mcp_server - INFO - 服务器启动成功！按 Ctrl+C 停止服务器
+2026-03-27 13:17:18,408 - mcp_server - INFO - 健康检查: http://localhost:8000/health
+2026-03-27 13:17:18,410 - mcp_server - INFO - 工具列表: http://localhost:8000/list_tools
+2026-03-27 10:32:05,041 - mcp_server - INFO - ==================================================
+2026-03-27 10:32:05,041 - mcp_server - INFO - CarPlay适配器MCP服务器启动中...
+2026-03-27 10:32:05,041 - mcp_server - INFO - 监听地址: 0.0.0.0:8000
+2026-03-27 10:32:05,041 - mcp_server - INFO - ==================================================
+2026-03-27 10:32:05,042 - mcp_server - INFO - 服务器启动成功！按 Ctrl+C 停止服务器
+2026-03-27 10:32:05,042 - mcp_server - INFO - 健康检查: http://localhost:8000/health
+2026-03-27 10:32:05,042 - mcp_server - INFO - 工具列表: http://localhost:8000/list_tools
